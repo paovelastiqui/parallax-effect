@@ -1,0 +1,34 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; }
+
+.parallax-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    perspective: 8px;
+    perspective-origin: 50%; }
+
+.image {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    height: 100%;
+    transform: 0 50%; }
+
+.image__background {
+    height: auto;
+    width: 100%;
+    transform: translateZ(0px) scale(1); }
+
+.image__middle {
+    width: 100%;
+    height: 100%;
+    transform: translateZ(2px) scale(0.75); }
+
+.image__foreground {
+    transform: translateZ(5px) scale(0.375); }
